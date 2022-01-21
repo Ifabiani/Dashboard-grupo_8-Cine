@@ -1,0 +1,21 @@
+.imagen {
+    width:8rem;
+    height: 12.5rem;
+}
+
+.li {
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+}
+
+.card{
+    width:8rem;
+    height: 4rem;
+
+}
