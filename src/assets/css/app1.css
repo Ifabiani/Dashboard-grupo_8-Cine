@@ -1,6 +1,16 @@
 .imagen {
+    width:16rem;
+    height: 22rem;
+    margin-left: 45px;
+    margin-bottom: 30px;;
+}
+
+.imagenes {
     width:8rem;
-    height: 12.5rem;
+    height:12rem;
+    
+    margin-left: 12px;
+    /* margin-bottom: 30px; */
 }
 
 .li {
@@ -10,12 +20,47 @@
 .flex{
     display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      /* align-items: center;
+      justify-content: center; */
+}
+
+.ancho{
+    width:24rem;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.ancho2{
+    width:70rem;
+    text-align: justify;
+    margin-left: 15px;
 }
 
 .card{
     width:8rem;
     height: 4rem;
 
+}
+
+.body {
+    background-color: black
+}
+
+.logo{
+    height:4.5rem;
+    width: 7rem;
+    text-align: center;
+}
+
+.etiqueta {
+    width: 8rem;
+    height:2rem;
+    background-color:white;
+    
+}
+
+.texto{
+    font-size:12px;
+    margin: 0 auto;
+    color: black;
 }

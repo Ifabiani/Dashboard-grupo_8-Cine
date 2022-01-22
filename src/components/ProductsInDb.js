@@ -27,21 +27,21 @@ function ProductsInDb() {
   },[])
 
   return (
-    <div className="col-lg-6 mb-4">
+    <div className="col-lg-6  mb-4">
       <div className="card shadow mb-4">
         <div className="card-header py-3">
           <h5 className="m-0 font-weight-bold text-gray-800">
             Películas
           </h5>
         </div>
-        <div className="card-body">
+        <div className="card-body ancho2">
           <div className="row">
 
-          <ul> { movies.map( (producto, i) => <li className='li' key={i + producto}><div > <img className='imagen' src={producto.image}/></div>
+          <ul className="flex ancho2"> { movies.map( (producto, i) => <li className='li'  key={i + producto}><div className="mb-2"> <img className='imagenes' src={producto.image}/></div>
            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                
-                <div className="card-body" >{producto.name}</div>
+              <div className="  etiqueta  texto text-center  ">
+              {producto.name}
+              
               </div>
             </div></li> ) } </ul>
           

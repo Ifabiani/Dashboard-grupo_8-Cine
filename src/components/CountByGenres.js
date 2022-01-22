@@ -35,35 +35,36 @@ function CountByGenres() {
   console.log(gen)
   let values = Object.values(totalGeneros)
   console.log(values)
+  
 
   let tableRowsData = [
     {
-        Title: gen[0],
+        Title: generos[0]?.name,
         Length: values[0],
         
     },
     {
-        Title: gen[1],
+        Title: generos[1]?.name,
         Length: values[1],
         
     },
     {
-        Title: gen[2],
+        Title: generos[2]?.name,
         Length: values[2],
         
     },
     {
-        Title: gen[3],
+        Title: generos[3]?.name,
         Length: values[3],
         
     },
     {
-        Title: gen[4],
+        Title: generos[4]?.name,
         Length: values[4],
         
     },
     {
-        Title: gen[5],
+        Title: generos[5]?.name,
         Length: values[5],
         
     },
@@ -81,17 +82,17 @@ function CountByGenres() {
   },[])
 
   return (
-    <div className="col-lg-6 mb-4">
-      <div className="card shadow mb-4">
-        <div className="card-header py-3">
+    <div className="col-lg-6 mb-4 ">
+      <div className="card shadow mb-4 " style={{width: 25 +'rem'}}>
+        <div className="card-header py-3" style={{width: 24 +'rem'}}>
           <h5 className="m-0 font-weight-bold text-gray-800">
-            Generos
+            Películas por género
           </h5>
         </div>
         <div className="card-body">
-          <div className="row">
+          <div className="row ancho " >
 
-          <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+          <table className="table table-bordered " id="dataTable" width="100%" cellSpacing="0">
                         <thead>
                             <tr>
                                 <th>Géneros</th>
@@ -99,13 +100,7 @@ function CountByGenres() {
                                 
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Géneros</th>
-                                <th>Cantidad de películas</th>
-                                
-                            </tr>
-                        </tfoot>
+                        
                         <tbody>
                             {
                             tableRowsData.map( ( row , i) => {

@@ -11,8 +11,9 @@ function ContentWrapper(){
                 <div id="content">
                     <TopBar />
                     <ContentRowTop />
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
+                
             </div>    
         </React.Fragment>
     )

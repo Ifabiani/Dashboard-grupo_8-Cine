@@ -15,12 +15,12 @@ function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav body sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-100 logo" src={image} alt="Digital House"/>
                     </div>
                 </a>
 
@@ -48,20 +48,20 @@ function SideBar(){
                     </Link>
                 </li>
 
-                {/*<!-- Nav Item - Pages -->*/}
-                <li className="nav-item">
+                {/* <!-- Nav Item - Pages --> */}
+                {/* <li className="nav-item">
                 <Link className="nav-link" to="/GenresInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Generos</span>
                     </Link>
-                </li>
+                </li> */}
 
                  {/*<!-- Nav Item - Charts -->*/}
-                 <li className="nav-item">
+                 {/* <li className="nav-item">
                     <Link className="nav-link" to="/UsersInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Usuarios</span></Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
@@ -85,11 +85,11 @@ function SideBar(){
                 </li>
 
                 {/*<!-- Nav Item - Search Movies -->*/}
-                <li className="nav-item nav-link">
+                {/* <li className="nav-item nav-link">
                 <Link className="nav-link" to="/SearchMovies">
                         <i className="fas fa-search"></i>
                         <span>Search Movies</span></Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
@@ -119,24 +119,25 @@ function SideBar(){
                 <Route path="/ProductsInDb">
                     <ProductsInDb />
                 </Route>
-                <Route path="/GenresInDb">
+                {/* <Route path="/GenresInDb">
                     <GenresInDb />
                 </Route>
+                <Route path="/UsersInDb">
+                    <UsersInDb />
+                </Route> */}
                 <Route path="/LastMovieInDb">
                     <LastMovieInDb />
                 </Route>
                 <Route path="/CountByGenres">
                     <CountByGenres />
                 </Route>
-                <Route path="/UsersInDb">
-                    <UsersInDb />
-                </Route>
+                
                 <Route path="/ContentRowMovies">
                     <ContentRowMovies />
                 </Route>
-                <Route path="/SearchMovies">
+                {/* <Route path="/SearchMovies">
                     <SearchMovies />
-                </Route>
+                </Route> */}
                 <Route component={NotFound} />
             </Switch>
             {/*<!-- End Microdesafio 2 -->*/}

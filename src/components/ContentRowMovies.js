@@ -82,7 +82,7 @@ let cartProps = [moviesInDB, totalAwards, actorsQuantity];
 
     return (
     
-        <div className="row">
+        <div className=" row">
             
             {cartProps.map( (movie, i) => {
 

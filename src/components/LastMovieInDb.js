@@ -39,16 +39,17 @@ function LastMovieInDb(){
     
     return(
         <div className="col-lg-6 mb-4">
-            <div className="card shadow mb-4">
-                <div className="card-header py-3">
+            <div className=" card shadow mb-4" style={{width: 25 +'rem'}}>
+                <div className=" card-header mb-3 py-3" style={{width: 24 +'rem'}}>
                     <h5 className="m-0 font-weight-bold text-gray-800">Última película en la base de datos</h5>
                 </div>
-                <div className="card-body">
-                    <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagen} alt=" Star Wars - Mandalorian "/>
+                <div className="">
+                    <div>
+                        <img className="imagen"  src={imagen} alt=" Star Wars - Mandalorian "/>
                     </div>
-                    <p>sinopsis</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle de película</a>
+                    <h2 className="ancho">{movie?.name}</h2>
+                    <p className=" ancho">{movie?.description}</p>
+                    {/* <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle de película</a> */}
                 </div>
             </div>
         </div>
